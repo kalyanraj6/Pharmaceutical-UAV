@@ -1,0 +1,60 @@
+body{
+	margin:0;
+	padding:0;
+	background-image: url(cover.jpg);
+	background-size:cover;
+	background-position:center;
+	height:100vh;
+	background-repeat:no-repeat;
+}
+.sign{
+width:450px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+background-color:black;
+box-shadow:0px -1px 20px 0px darkgrey;
+}
+.sign h1{
+text-align:center;
+font-weight:500;
+font-family:sans-serif;
+margin-bottom:10px;
+padding: 13px 0;
+}
+input[type="text"],input[type="password"],input[type="email"]{
+	display:inline;
+	background:none;
+	text-align:center;
+	width:150px;
+	border: 2px solid #0ae2f3;
+	margin:20px auto;
+	padding:14px 10px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+}
+input[type="submit"],input[type="reset"]{
+display:inline;
+	background:none;
+	text-align:center;
+	width:120px;
+	border: 2px solid #fe9d07;
+	margin:20px auto;
+	padding:14px 10px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+	cursor:pointer;
+}
+input[type="text"]:focus,input[type="password"]:focus,input[type="email"]:focus{
+width:180px;
+border-color:#fe9d07;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+background:#fe9d07;
+}

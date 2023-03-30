@@ -1,0 +1,14 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+ 
+</head>
+<form  class="login_box" action="/admin_login"  method="post">
+<h1>LOGIN</h1>
+<div class="msg">{{ msg }}</div>
+<input id="username" type="text" name="username" placeholder="Username" value="">
+<input id="password" type="password" name="password" placeholder="Password" value="">
+<a href="{{url_for('register')}}" style="margin-left:30px">Create new account</a></h1>
+<input type="submit"  name="submit" class="btn" value="Login">
+</html>	
